@@ -12,7 +12,7 @@ def makeSineWave(waveLength, frequency):
 
     def showWave(wave):
         wave.title('Sine Wave')
-        wave.xlabel('Time')
+        wave.xlabel('T')
         wave.ylabel('X')
         wave.grid(True, which='both')
         wave.axhline(y=0, color='k')
