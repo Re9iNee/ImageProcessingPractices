@@ -4,9 +4,9 @@ import matplotlib.pyplot as plot
 
 
 def makeSineWave(waveLength, frequency):
-    time = np.arange(0, waveLength, 0.1) * frequency
+    time = np.arange(0, waveLength, 0.1)
 
-    amplitude = np.sin(time)
+    amplitude = np.sin(time * frequency)
 
     plot.plot(time, amplitude)
 
@@ -27,7 +27,9 @@ def makeSineWave(waveLength, frequency):
 simpleSineWave = makeSineWave((np.pi * 6), (np.pi / 4))
 
 
-def findMax():
+def findMax(wave):
+    # wave.
+
     print("TODO")
 
 
