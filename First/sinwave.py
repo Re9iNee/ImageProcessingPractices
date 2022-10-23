@@ -1,3 +1,4 @@
+from xml.dom.expatbuilder import theDOMImplementation
 import numpy as np
 
 import matplotlib.pyplot as plot
@@ -21,16 +22,31 @@ def makeSineWave(waveLength, frequency):
 
     showWave(plot)
 
+    def findMax(arr):
+        tempMax
+        for val in arr:
+            if val > tempMax:
+                tempMax = val
+        return tempMax
+
+    def findMin(arr):
+        tempMin
+        for val in arr:
+            if val < tempMin:
+                tempMin = val
+        return tempMin
+
+    print("MAXIMUM POINT: ", findMax(amplitude))
+    print("MINIMUM POINT: ", findMin(amplitude))
+
     return plot
 
 
-simpleSineWave = makeSineWave((np.pi * 6), (np.pi / 4))
+simpleWave = makeSineWave((np.pi * 6), (np.pi / 4))
 
 
 def findMax(wave):
-    # wave.
-
-    print("TODO")
+    print("TODO: Separate findMax fns (access to inner sinewave function")
 
 
 findMax()
