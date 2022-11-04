@@ -6,6 +6,6 @@ import numpy as np
 image = mpimg.imread('image.jpg')
 convertedImage = image.astype(np.uint8)
 
-imgplot = plt.imshow(image)
+imgplot = plt.imshow(convertedImage)
 
 plt.show()
