@@ -1,7 +1,7 @@
-image = imread("image.jpg");
+originalImage = imread("image.jpg");
 
-imshow(image);
-
+convertedImage = im2uint8(originalImage)
+imshow(convertedImage);
 
 figure;
-imhist(image)
+imhist(convertedImage)
